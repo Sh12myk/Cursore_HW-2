@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="ua">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Mykola Shostak">
+    <title>HW#2 "Поняття Front-End. HTML"</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header class="header">Homework #2</header>
+    <h1 class="generalname">Поняття Front-End. HTML</h1>
+    <section class="wrapper">
+        <div class="wrappertable">
+            <table class="tablelist" border="2" width="90%" cellpadding="6">
+                <caption>Таблиця користувачів</caption>
+                <thead>
+                <tr>
+                    <th>Ім'я</th>
+                    <th>Прізвище</th>
+                    <th>Телефон</th>
+                    <th>Електронна адреса</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <th>Жан</th>
+                    <th>Вальжан</th>
+                    <th>3346666666</th>
+                    <th>LesMisérables1@gmail.com</th>
+                </tr>
+                <tr>
+                    <th>Еміль</th>
+                    <th>Сінклер</th>
+                    <th>3341223345</th>
+                    <th>demianmylife@demianmail.com</th>
+                </tr>
+                <tr>
+                    <th>Наруто</th>
+                    <th>Узумакі</th>
+                    <th>0234646789</th>
+                    <th>kuramalover@konochamail.com</th>
+                </tr>
+                <tr>
+                    <th>Алі</th>
+                    <th>Баба</th>
+                    <th>6578888777</th>
+                    <th>wantgold@alimail.com</th>
+                </tr>
+                <tr>
+                    <th>Міккі</th>
+                    <th>Маус</th>
+                    <th>0847718904</th>
+                    <th>Mikki@cartoonmail.com</th>
+                </tr>
+                <tr>
+                    <th>Гаррі</th>
+                    <th>Поттер</th>
+                    <th>4200036467</th>
+                    <th>wantingrifindor@magicmail.com</th>
+                </tr>
+                </tbody>
+
+            </table>
+
+
+        </div>
+        <div class="forms">
+            <form action="">
+                <fildset>
+                    <legend>Особисті дані</legend>
+                    <label for="firstname">Ім'я</label>
+                    <input id="firstname" type="text" placeholder="Введіть ім'я" required><br>
+                    <label for="lastname">Прізвище</label>
+                    <input id="lastname" type="text" placeholder="Введіть прізвище" required>
+                    <hr>
+                    <legend>Виберіть стать</legend>
+                    <label>
+                        <input type="radio" name="value" value="option1">
+                        Ч.
+                    </label><br>
+                    <label>
+                        <input type="radio" name="value" value="option2" checked>
+                        Ж.
+                    </label><br><hr>
+                    <select>
+                        <option value="dis" disabled="Виберіть місто" selected>Виберіть місто</option>
+                        <option value="Київ">Київ</option>
+                        <option value="Львів">Львів</option>
+                        <option value="Харків">Харків</option>
+                        <option value="Одеса">Одеса</option>
+                        <option value="Дніпро">Дніпро</option>
+                        <option value="Донецьк">Донецьк</option>
+                        <option value="Запоріжжя">Запоріжжя</option>
+                        <option value="Кривий Ріг">Кривий Ріг</option>
+                        <option value="Миколаїв">Миколаїв</option>
+                        <option value="Маріуполь">Маріуполь</option>
+                    </select>
+                    <hr>
+                    <legend>Виберіть мови, якими ви володієте</legend>
+                    <input type="checkbox" value="Українська" checked>Українська<br>
+                    <input type="checkbox" value="Польська">Польська<br>
+                    <input type="checkbox" value="Російська">Російська<br>
+                    <input type="checkbox" value="Англійська">Англійська<br>
+                    <input type="checkbox" value="Китайська">Китайська<br>
+                    <input type="checkbox" value="Німецька">Німецька<br>
+                    <input type="checkbox" value="Французька">Французька<br>
+                    <hr>
+                    <legend>Питання</legend>
+                    <textarea rows="5" cols="20" required placeholder="Напишіть своє питання"></textarea><br>
+                </fildset>
+                <button  type="submit">Відправити</button>
+            </form>
+        </div>
+    </section>
+
+
+
+</body>
+</html>
