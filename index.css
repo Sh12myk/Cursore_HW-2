@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+*{font-family: 'Montserrat', sans-serif;}
+.header {
+    color: coral;
+    font-size: 100px;
+    margin-top: 60px;
+    text-align: center;
+}
+.generalname{
+    margin-top: 30px;
+    text-align: center;
+    font-size: 70px;
+}
+.wrapper{
+    margin: auto;
+    border: 3px solid coral ;
+
+}
+
+.tablelist{
+    margin: auto;
+    border: 4px solid black;
+    width: 90%;
+    font-size:19px;
+    border-collapse: collapse;
+}
+caption{
+    font-size: 30px;
+}
+thead{
+    font-size: 29px;
+    font-weight: bold;
+    background: coral;
+}
+TH, TD {
+    border: 1px solid black;
+    text-align: center;
+    padding: 4px;
+}
+.forms{
+    font-size:25px;
+    margin: auto;
+    margin-top: 40px;
+}
+form{
+    margin-top: 30px;
+}
+legend {
+    font-weight: bold;
+    font-size: 30px
+}
+#firstname{
+    margin-left: 81px;
+}
+#lastname #firstname {
+    font-size: 15px;
+}
+.citysel{
+    font-size: 20px;
+}
+button {
+    padding: 2px;
+    text-align: center;
+    font-size: 25px;
+    margin-top: 40px;
+}
+textarea{
+    font-size: 25px;
+}
+select{
+    margin-top: 20px;
+}
