@@ -14,7 +14,7 @@
     <h1 class="generalname">Поняття Front-End. HTML</h1>
     <section class="wrapper">
         <div class="wrappertable">
-            <table class="tablelist" border="2" width="90%" cellpadding="6">
+            <table class="tablelist">
                 <caption>Таблиця користувачів</caption>
                 <thead>
                 <tr>
@@ -72,9 +72,9 @@
                 <fildset>
                     <legend>Особисті дані</legend>
                     <label for="firstname">Ім'я</label>
-                    <input id="firstname" type="text" placeholder="Введіть ім'я" required><br>
+                    <input id="firstname" type="text" required placeholder="Введіть ім'я"><br>
                     <label for="lastname">Прізвище</label>
-                    <input id="lastname" type="text" placeholder="Введіть прізвище" required>
+                    <input id="lastname" type="text" required placeholder="Введіть прізвище">
                     <hr>
                     <legend>Виберіть стать</legend>
                     <label>
@@ -84,8 +84,9 @@
                     <label>
                         <input type="radio" name="value" value="option2" checked>
                         Ж.
-                    </label><br><hr>
-                    <select>
+                    </label><br>
+                    <legend>Виберіть місто</legend>
+                    <select class="citysel">
                         <option value="dis" disabled="Виберіть місто" selected>Виберіть місто</option>
                         <option value="Київ">Київ</option>
                         <option value="Львів">Львів</option>
@@ -98,7 +99,6 @@
                         <option value="Миколаїв">Миколаїв</option>
                         <option value="Маріуполь">Маріуполь</option>
                     </select>
-                    <hr>
                     <legend>Виберіть мови, якими ви володієте</legend>
                     <input type="checkbox" value="Українська" checked>Українська<br>
                     <input type="checkbox" value="Польська">Польська<br>
@@ -109,9 +109,9 @@
                     <input type="checkbox" value="Французька">Французька<br>
                     <hr>
                     <legend>Питання</legend>
-                    <textarea rows="5" cols="20" required placeholder="Напишіть своє питання"></textarea><br>
+                    <textarea rows="4" cols="40" required placeholder="Напишіть своє питання"></textarea><br>
                 </fildset>
-                <button  type="submit">Відправити</button>
+                <button  type="submit" type="reset">Відправити</button>
             </form>
         </div>
     </section>
