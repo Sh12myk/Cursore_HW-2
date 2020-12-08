@@ -1,18 +1,20 @@
 <!doctype html>
-<html lang="ua">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+          content="width=device-width">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="author" content="Mykola Shostak">
     <title>HW#2 "Поняття Front-End. HTML"</title>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<section class="wrapper">
     <header class="header">Homework #2</header>
+
     <h1 class="generalname">Поняття Front-End. HTML</h1>
-    <section class="wrapper">
+
         <div class="wrappertable">
             <table class="tablelist">
                 <caption>Таблиця користувачів</caption>
@@ -68,15 +70,19 @@
 
         </div>
         <div class="forms">
-            <form action="">
-                <fildset>
-                    <legend>Особисті дані</legend>
+            <fieldset>
+                <legend>Особисті дані</legend>
+                <form class="inputpd">
                     <label for="firstname">Ім'я</label>
                     <input id="firstname" type="text" required placeholder="Введіть ім'я"><br>
                     <label for="lastname">Прізвище</label>
                     <input id="lastname" type="text" required placeholder="Введіть прізвище">
                     <hr>
-                    <legend>Виберіть стать</legend>
+                </form>
+            </fieldset>
+            <fieldset>
+                <legend>Виберіть стать</legend>
+                <form>
                     <label>
                         <input type="radio" name="value" value="option1">
                         Ч.
@@ -84,10 +90,15 @@
                     <label>
                         <input type="radio" name="value" value="option2" checked>
                         Ж.
-                    </label><br>
-                    <legend>Виберіть місто</legend>
+                    </label>
+                </form>
+            </fieldset>
+                    <br>
+            <fieldset>
+                <legend>Виберіть місто</legend>
+                <form>
                     <select class="citysel">
-                        <option value="dis" disabled="Виберіть місто" selected>Виберіть місто</option>
+                        <option value="dis" disabled selected>Виберіть місто</option>
                         <option value="Київ">Київ</option>
                         <option value="Львів">Львів</option>
                         <option value="Харків">Харків</option>
@@ -99,7 +110,11 @@
                         <option value="Миколаїв">Миколаїв</option>
                         <option value="Маріуполь">Маріуполь</option>
                     </select>
-                    <legend>Виберіть мови, якими ви володієте</legend>
+                </form>
+            </fieldset>
+            <fieldset>
+                <legend>Виберіть мови, якими ви володієте</legend>
+                <form>
                     <input type="checkbox" value="Українська" checked>Українська<br>
                     <input type="checkbox" value="Польська">Польська<br>
                     <input type="checkbox" value="Російська">Російська<br>
@@ -108,11 +123,18 @@
                     <input type="checkbox" value="Німецька">Німецька<br>
                     <input type="checkbox" value="Французька">Французька<br>
                     <hr>
-                    <legend>Питання</legend>
+                </form>
+            </fieldset>
+            <fieldset>
+                <legend>Питання</legend>
+                <form>
+
                     <textarea rows="4" cols="40" required placeholder="Напишіть своє питання"></textarea><br>
-                </fildset>
-                <button  type="submit" type="reset">Надіслати</button>
-            </form>
+                </form>
+
+                <button  type="submit">Надіслати</button>
+
+            </fieldset>
         </div>
     </section>
 
