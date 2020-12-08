@@ -1,9 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+;
 *{font-family: 'Montserrat', sans-serif;}
+body {
+    background-image: url("image/background1.png");
+    background-size: 1201px 1931px;
+
+
+}
 .header {
     color: coral;
     font-size: 100px;
-    margin-top: 60px;
+    margin-top: 70px;
     text-align: center;
 }
 .generalname{
@@ -13,7 +20,10 @@
 }
 .wrapper{
     margin: auto;
-    border: 3px solid coral ;
+    padding-left: 120px;
+    padding-right: 120px;
+   padding-bottom: 140px;
+
 
 }
 
@@ -50,13 +60,19 @@ legend {
     font-size: 30px
 }
 #firstname{
-    margin-left: 81px;
+    margin-left: 63px;
 }
-#lastname #firstname {
-    font-size: 15px;
+
+input[type="text"]
+{
+    font-size:20px;
 }
 .citysel{
     font-size: 20px;
+    width: 300px;
+    padding-bottom: 20px;
+
+
 }
 button {
     padding: 2px;
@@ -69,4 +85,8 @@ textarea{
 }
 select{
     margin-top: 20px;
+    padding-bottom: 20px;
+}
+fieldset{
+    border: 5px solid coral ;
 }
